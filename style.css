@@ -1,0 +1,114 @@
+/* Update input elements to be block-level */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ff9d9d;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style labels to be displayed above input elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Container for label and input */
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Your existing CSS continues below */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff9d9d;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.information-container {
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+    background-color: white;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    padding: 5px 0;
+}
+
+.second-row{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    padding: 5px 0;
+}
+
+.third-row, .fourth-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.first-row div, .second-row div, .third-row div, .fourth-row div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+.gender, .date-picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gender label, .date-picker label {
+    margin-right: 10px;
+}
+
+.Hobbies {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#form-submit {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form-submit:hover {
+    background-color: #0056b3;
+}
+
